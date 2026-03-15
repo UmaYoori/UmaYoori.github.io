@@ -180,3 +180,36 @@ footer {
         width: 100%;
     }
 }
+/* --- HELIOS PORTAL STYLES --- */
+.card-helios { 
+    border: 2px solid var(--primary-color) !important; 
+    position: relative;
+}
+
+.neon-pulse { 
+    animation: neon-glow 2s ease-in-out infinite; 
+    display: inline-block; 
+}
+
+@keyframes neon-glow {
+    0%, 100% { 
+        text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff; 
+        transform: scale(1); 
+    }
+    50% { 
+        text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff; 
+        transform: scale(1.1); 
+    }
+}
+
+.btn-helios { 
+    background: linear-gradient(45deg, #ff00ff, #00ffff) !important; 
+    border: none !important; 
+    box-shadow: 0 4px 15px rgba(255, 0, 255, 0.3);
+    color: white !important;
+}
+
+.btn-helios:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 255, 255, 0.5);
+}
